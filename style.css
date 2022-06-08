@@ -364,7 +364,7 @@ li a {
 
 .tour {
     position: relative;
-    height: 100vh;
+    height: 120vh;
     padding-top: 5vh;
     background: var(--bg-color);
     z-index: 200;
