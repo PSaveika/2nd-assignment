@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <meta name="description" content="Povilas Saveika CodeAcademy antroji atsiskaitymo užduotis">
+    <meta name="keywords" content="Povilas, Saveika, antroji užduotis">
+    <meta name="author" content="Povilas Saveika">
+
+    <title>Povilas Saveika | Tiesto</title>
+
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <header>
+        <video autoplay muted loop class="bg-video">
+            <source src="video/BG-video.mp4" type="video/mp4">
+                Jūsų naršyklė nėra pritaikyta šio video atvaizdavimui.
+        </video>
+
+        <div class="header-text">
+            <h1>
+                Tiësto
+                <span>Feel the rhythm</span>
+            </h1>
+        </div>
+    </header>
+
+    <div class="latest-hit">
+        <div class="wrap">
+            <h2>Latest music</h2>
+            <iframe src="https://www.youtube.com/embed/vdouDiUU4fw" frameborder="0" allowfullscreen class="latest-hit-frame"></iframe>
+        </div> 
+    </div>
+
+    <div class="socials">
+        <a href="http://www.facebook.com/tiesto" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-square"></i></a>
+        <a href="http://open.spotify.com/artist/2o5jDhtHVPhrJdv3cEQ99Z" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-spotify"></i></a>
+        <a href="http://instagram.com/tiesto" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/tiesto" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter-square"></i></a>
+    </div>
+
+    <div class="space-img">
+        <div class="bg">
+        </div>
+    </div>
+
+
+    <div class="music-carousel">
+          
+        <input type="radio" name="slider" id="song-0" checked>
+        <input type="radio" name="slider" id="song-1">
+        <input type="radio" name="slider" id="song-2">
+
+        <div class="music-cards">
+            <label class="card" for="song-0" id="label-0">
+                <img src="img/track-0.jpg" alt="" class="track-img" onclick="pause1(), pause2()">
+            </label>
+            <label class="card" for="song-1" id="label-1">
+                <img src="img/track-1.jpg" alt="" class="track-img" onclick="pause0(), pause2()">
+            </label>
+            <label class="card" for="song-2" id="label-2">
+                <img src="img/track-2.jpg" alt="" class="track-img" onclick="pause0(), pause1()">
+            </label>
+        </div>
+        
+        
+        <div class="player">
+          <div class="upper-part">
+
+            <div class="info-area" id="test">
+
+              <label class="song-info" id="song-info-1">
+                <div class="title">The Motto</div>
+                <div class="sub-line">
+                  <div class="subtitle">Tiësto & Ava Max</div>
+                </div>
+
+                <audio controls class="audio-style audio-0">
+                  <source src="audio/track-0.mp3" type="audio/ogg">
+                Your browser does not support the audio element.
+                </audio>
+              </label>
+
+              <label class="song-info" id="song-info-2">
+                <div class="title">The Business</div>
+                <div class="sub-line">
+                  <div class="subtitle">Tiësto</div>
+                </div>
+
+                <audio controls class="audio-style audio-1">
+                  <source src="audio/track-1.mp3" type="audio/ogg">
+                Your browser does not support the audio element.
+                </audio>
+              </label>
+
+              <label class="song-info" id="song-info-3">
+                <div class="title">Don't Be Shy</div>
+                <div class="sub-line">
+                  <div class="subtitle">Tiësto & Karol G</div>
+                </div>
+
+                <audio controls class="audio-style audio-2">
+                  <source src="audio/track-2.mp3" type="audio/ogg">
+                Your browser does not support the audio element.
+                </audio>
+              </label>
+
+            </div>
+
+          </div>
+          
+        </div>
+
+    </div>
+
+    <div class="tours">
+        <h2>Tour Dates</h2>
+    </div>
+
+    <div class="tour">
+      <div class="tour-list">
+        <label for="touch" class="grid-view">
+          <span class="tour-date"><h3>Jun 11 Sat</h3> </span>
+          <span><h3>AYU Dayclub @ 11:00am </h3> </span>
+          <span><h3>Las Vegas, NV, United States</h3> </span>
+          <span class="tour-map"><h3>Map</h3></span>
+        </label>
+        <input type="checkbox" id="touch">
+
+        <ul class="slide">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d147552.0865129947!2d25.11295224457385!3d54.700802087315004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd93fb5c6408f5%3A0x400d18c70e9dc40!2sVilnius!5e0!3m2!1slt!2slt!4v1654718502735!5m2!1slt!2slt" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </ul>
+
+        <label for="touch1" class="grid-view">
+          <span class="tour-date"><h3>Jun 11 Sat</h3> </span>
+          <span><h3>Exchange LA @ 10:00pm</h3> </span>
+          <span><h3>Los Angeles, CA, United States</h3> </span>
+          <span class="tour-map"><h3>Map</h3></span>
+        </label>
+        <input type="checkbox" id="touch1">
+
+        <ul class="slide">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d147552.0865129947!2d25.11295224457385!3d54.700802087315004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd93fb5c6408f5%3A0x400d18c70e9dc40!2sVilnius!5e0!3m2!1slt!2slt!4v1654718502735!5m2!1slt!2slt" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </ul>
+
+        <label for="touch2" class="grid-view">
+          <span class="tour-date"><h3>Jun 15 WED</h3> </span>
+          <span><h3>Gliwice Arena @ 8:00pm</h3> </span>
+          <span><h3>Gliwice, Poland</h3> </span>
+          <span class="tour-map"><h3>Map</h3></span>
+        </label>
+        <input type="checkbox" id="touch2">
+
+        <ul class="slide">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d147552.0865129947!2d25.11295224457385!3d54.700802087315004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd93fb5c6408f5%3A0x400d18c70e9dc40!2sVilnius!5e0!3m2!1slt!2slt!4v1654718502735!5m2!1slt!2slt" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </ul>
+
+        <ul class="slide">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d147552.0865129947!2d25.11295224457385!3d54.700802087315004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd93fb5c6408f5%3A0x400d18c70e9dc40!2sVilnius!5e0!3m2!1slt!2slt!4v1654718502735!5m2!1slt!2slt" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </ul>
+
+        <label for="touch3" class="grid-view">
+          <span class="tour-date"><h3>Jun 16 THU</h3> </span>
+          <span><h3>Skopje Calling @ 10:00pm</h3> </span>
+          <span><h3>Skopje, Macedonia</h3> </span>
+          <span class="tour-map"><h3>Map</h3></span>
+        </label>
+        <input type="checkbox" id="touch3">
+
+        <ul class="slide">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d147552.0865129947!2d25.11295224457385!3d54.700802087315004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd93fb5c6408f5%3A0x400d18c70e9dc40!2sVilnius!5e0!3m2!1slt!2slt!4v1654718502735!5m2!1slt!2slt" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </ul>
+
+
+
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
